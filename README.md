@@ -19,15 +19,19 @@ flow:
   * you can only present from this VC, because this VC doesn't contain root view as NavigationController.
 
   * ViewController -> HomeVC 
+  
        push   X
+       
        presnt ✓
       
       
 # HomeVC:
    * Home VC contain rootView As Navigation controller.
    * HomeVC -> PresentVC,PushVC
+   
         push      ✓
-        present.  ✓
+        
+        present   ✓
         
         
         
