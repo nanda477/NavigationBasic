@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMU-pq-fEc">
+                                <rect key="frame" x="26" y="73" width="322" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Xei-Xq-QMM"/>
+                                </constraints>
+                                <state key="normal" title="Go To Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoHomeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GJu-Yv-8sb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AMU-pq-fEc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="0gK-sZ-xd5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AMU-pq-fEc" secondAttribute="trailing" constant="27" id="Mhz-yl-qRw"/>
+                            <constraint firstItem="AMU-pq-fEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="Rtt-MF-m9a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="-654.42278860569718"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="Ihb-ll-dg4">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC_ID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4ZZ-pS-761" customClass="HomeVC" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4r0-KB-NJS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="OCO-2R-Gg8">
+                                <rect key="frame" x="16" y="75" width="343" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1p-5u-lVK">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Push VC">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pushAction:" destination="4ZZ-pS-761" eventType="touchUpInside" id="r5g-ds-ADv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDw-eV-0jF">
+                                        <rect key="frame" x="0.0" y="90" width="343" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Present VC">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="presentAction:" destination="4ZZ-pS-761" eventType="touchUpInside" id="yAg-jd-3pc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Fkk-7C-clY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OCO-2R-Gg8" firstAttribute="leading" secondItem="rvA-er-g6s" secondAttribute="leading" constant="16" id="JqE-0k-tkl"/>
+                            <constraint firstItem="OCO-2R-Gg8" firstAttribute="top" secondItem="rvA-er-g6s" secondAttribute="top" constant="55" id="rtN-Jb-gVe"/>
+                            <constraint firstItem="rvA-er-g6s" firstAttribute="trailing" secondItem="OCO-2R-Gg8" secondAttribute="trailing" constant="16" id="t3W-Tz-98t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rvA-er-g6s"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="THz-Nf-tEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="38.23088455772114"/>
+        </scene>
+        <!--PushVC-->
+        <scene sceneID="Hr0-3N-0wd">
+            <objects>
+                <viewController storyboardIdentifier="PushVC_ID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ieC-pq-KVE" customClass="PushVC" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sr8-kg-plB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is push from Home VC no need of any close button action.  It contains default Back(pop) button." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULE-cb-akk">
+                                <rect key="frame" x="16" y="60" width="343" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ULE-cb-akk" firstAttribute="top" secondItem="Mcl-6d-4Oj" secondAttribute="top" constant="40" id="46l-iN-YbC"/>
+                            <constraint firstItem="ULE-cb-akk" firstAttribute="leading" secondItem="Mcl-6d-4Oj" secondAttribute="leading" constant="16" id="VQt-8m-guw"/>
+                            <constraint firstItem="Mcl-6d-4Oj" firstAttribute="trailing" secondItem="ULE-cb-akk" secondAttribute="trailing" constant="16" id="wMd-BL-HfD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mcl-6d-4Oj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iI5-qb-HMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296.80000000000001" y="764.16791604197908"/>
+        </scene>
+        <!--PresentVC-->
+        <scene sceneID="hOM-19-RvV">
+            <objects>
+                <viewController storyboardIdentifier="PresentVC_ID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zn6-fG-FPR" customClass="PresentVC" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bke-4p-JiE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is present from Home VC close button action to dismiss this VC.  Need to add close buttion and dismiss your own." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dl2-de-s94">
+                                <rect key="frame" x="16" y="60" width="343" height="105.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wdF-GK-xj5" firstAttribute="trailing" secondItem="dl2-de-s94" secondAttribute="trailing" constant="16" id="B5L-2P-TAd"/>
+                            <constraint firstItem="dl2-de-s94" firstAttribute="leading" secondItem="wdF-GK-xj5" secondAttribute="leading" constant="16" id="PKX-Fc-G5T"/>
+                            <constraint firstItem="dl2-de-s94" firstAttribute="top" secondItem="wdF-GK-xj5" secondAttribute="top" constant="40" id="jP0-a0-OOm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wdF-GK-xj5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v4K-Zf-VF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1464.8" y="763.26836581709154"/>
+        </scene>
+    </scenes>
+</document>
