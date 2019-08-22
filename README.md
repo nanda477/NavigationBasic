@@ -10,4 +10,4 @@ Push:
 Present:
 * To present from A -> B, A may or maynot contain NaviagtionController.
 * B Viewcontroller don't have have back button by default.
-* B Viewcontroller, Need to add close buttion and implement action to close current VC.
+* B Viewcontroller, Need to add close button and implement action to close current VC.
