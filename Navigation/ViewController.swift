@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //~~~~~~~~~~~~~1~~~~~~~~~~~~
+        //set background color
+          //self.view.backgroundColor = .lightGray
+        
+        //~~~~~~~~~~~~~~2~~~~~~~~~~~~~
+        //set background color as image
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg")!)
+        
     }
 
 
